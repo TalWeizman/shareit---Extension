@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+        <!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+        <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+
+        <script type="text/javascript" src="../js/jquery.autocomplete.js"></script>
+
+        <!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+                
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+
+        <!-- load stylesheets: internal -->
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+        <link rel="stylesheet" type="text/css" href="../css/main.css"></link>
+ 
+        
+    </head>
+    <body>
+        <div id="main-outer">
+            <div id="main-inner" style="text-align:center">
+                <img style="width:100px" src="../images/shareitlogo.png">
+                <div id="main-about-text">ShareIT - שטף את הקהילה</div>
+            </div>
+
+            <br>
+            <div style="background-color:#E1FDE5;text-align:center" id="search" >
+                
+                
+                <p>בחרת לשטף את הקישור הבא</p>
+                <textarea style="width:100%" id="link-input" ></textarea>
+                
+                <div style="width:100%; float:left;position:relative">
+                    
+                    <div style="width:100%">
+                        איכות                
+                    <select id="qselect" style="width:150px">
+                    
+                                      <option value="לא ידוע">לא ידוע</option>
+                    
+                                      <option value="מצויינת">מצויינת</option>
+                                      <option value="טובה מאוד">טובה מאוד</option>
+                                      <option value="טובה">טובה</option>
+                                      <option value="סבירה">סבירה</option>
+                                      <option value="נמוכה">נמוכה</option>
+                                      <option value="נמוכה מאוד">נמוכה מאוד</option>
+                    
+                                      <option value="HD">HD</option>
+                                      <option value="HD 720">HD 720</option>
+                                      <option value="HD 1080">HD 1080</option>
+                                      <option value="4k">4k</option>
+                    
+                                      <option value="3D">3D</option>
+                    
+                                      <option value="CAM">CAM</option>
+                                      <option value="CAMRip">CAMRip</option>
+                                      <option value="CAM">CAM</option>
+                                      <option value="TS">TS</option>
+                                      <option value="HDTS">HDTS</option>
+                                      <option value="PDVD">PDVD</option>
+                                      <option value="WORKPRINT">WORKPRINT</option>
+                                      <option value="TC">TC</option>
+                                      <option value="HDTC">HDTC</option>
+                                      <option value="PPV">PPV</option>
+                                      <option value="PPVRip">PPVRip</option>
+                                      <option value="DVDSCR">DVDSCR</option>
+                                      <option value="DVDRip">DVDRip</option>
+                                      <option value="HDTV">HDTV</option>
+                                      <option value="PDTV">PDTV</option>
+                                      <option value="TVRip">TVRip</option>
+                                      <option value="HDTVRip">HDTVRip</option>
+                                      <option value="WEB-DL">WEB-DL</option>
+                                      <option value="HDRip">HDRip</option>
+                                      <option value="WEBRip">WEBRip</option>
+                                      <option value="BDRip">BDRip</option>
+                                      <option value="BRRip">BRRip</option>
+                                      <option value="BluRay">BluRay</option>
+                                    </select> </div> 
+                                    
+                                    
+                                    <div style="width:100%"> תרגום מובנה <input id="hebsub" type="checkbox"> </div>
+                                    <br>
+                                    <div  id="season-con" style="width:100%" > עונה   
+                                            <select id="dd_season">
+                                                    <option value=""></option>    
+                                            </select>                                   
+                                            
+                                         
+                                    </div>
+                                    <div id="episode-con" style="width:100%" > פרק   
+                                            <select id="dd_episode"></select>                                      
+                                            
+                                    </div>
+                                    
+                                </div>
+                
+
+                
+
+                <h4 style="color:#66CC75">חפש סרט או סדרה בחר ולחץ שטף</h4>
+
+                <div>
+                    <input style="width:100%;height:25px" type="text"  placeholder="חיפוש" id="search-input">
+                </div>
+
+                <div id="search-results">
+
+                </div>
+
+                <br><br>
+
+                    <button id="share-button" type="button" style="background-color:#66CC75;color:white" class="btn-lg btn-block">שטף</button>
+                
+                    <h2 id="thanks-msg">תודה על השיתוף</h2>
+            </div>
+
+        </div>
+        <!-- load javascript: unique html page javascript file -->
+        <script type="text/javascript" src="../js/main.js"></script>
+    </body>
+</html>
